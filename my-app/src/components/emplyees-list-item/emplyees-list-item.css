@@ -55,12 +55,12 @@
     transform: translate(0px);
 }
 
-.list-group-item .increase .list-group-item-label,
- .list-group-item .increase .list-group-item-input {
+.list-group-item.increase .list-group-item-label,
+ .list-group-item.increase .list-group-item-input {
     color: #e09f3e;
  }
 
- .list-group-item .increase .btn-star {
+ .list-group-item.increase .btn-star {
      color: #aeaeae
  }
 
