@@ -29,18 +29,19 @@ class App extends Component {
 
     addNewWorker = (name,salary) => {
 
-        const worker = {
+        const newWorker = {
             name: name,
             salary: salary,
             prize: false,
-            id: ++this.newId
+            id: this.newId++
         }
 
-        this.setState(({data}) => ({
-            data: [...data, worker]
-        }))
-        console.log(name,salary)
-        // e.preventDefault()
+        this.setState(({data}) => {
+            const newArr = [...data, newWorker]
+          return {
+              data: newArr
+          }  
+        })
     }
     render() {
         const {data} = this.state
